@@ -26,27 +26,15 @@ body {
     /*z-index: 1;*/
 }
 
-/* Search bar */
-#searchbar {
-    text-align: center;
-    position: 2rem;
-    z-index: -1; 
-    left: 400px;
-    background: transparent;
-    
-}
 
-#search {
-/*
-    color: black;
-    position:2rem;
-*/
-}
 
 img { 
-text-align: center;
-height: 200px;
-padding-left: 36rem;
+    align-content: center;
+    height: 200px;   
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p.stevenabout {
@@ -93,13 +81,15 @@ p.stevenabout {
 
 p.greeting {
     position: relative;
-    left: 34rem;
+    left: 32rem;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 50px;
     font-family: 'Lato', sans-serif;
     color: #ecf0f1;
     line-height: 40px;
     height: 40px;
+    display: block;
+    padding-left: -900rem;
 }
 
 .welcome ul.rotator {
@@ -116,6 +106,9 @@ p.greeting {
     animation-duration: 6s;
     animation-iteration-count: infinite;
 /*    height: 40px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .welcome ul.rotator li {
@@ -190,4 +183,20 @@ p.greeting {
     width: 617px;
     height: 1100px;
     text-align: center;  
+}
+
+/* Search bar */
+#searchbar {
+    text-align: center;
+    position: 2rem;
+    z-index: -1; 
+    left: 400px;
+    background: transparent;
+    top:900rem;
+    
+}
+
+#search {
+ top:900rem;
+    
 }
