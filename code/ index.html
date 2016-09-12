@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>  
         
-       <title> Steve the sloth </title>
-        <h1>Steve the weather  Sloth</h1>
-         </head> 
-    
-    
-    <body>
         <meta charset="utf-8">
+        <title> Steve the sloth </title>
+       
+        
         <link href="main.css" rel="stylesheet"/>
         <link rel="stylesheet" href="main.js">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head> 
+    
+   
+    
+    <body>
+        <h1>Steve the weather  Sloth</h1>
+        
+        
        
-<div class='content'>
-  <div class='visible'>
-    <p>  G'day </p>
-    <ul>
-      <li>Sheila!</li>
-      <li>Bruce!</li>
-      <li>Everyone!</li>
-    </ul>
-  </div>
-</div>
+        <div class="content">
+          <div class="visible">
+            <p>G'day</p>
+            <ul>
+              <li>Sheila!</li>
+              <li>Bruce!</li>
+              <li>Everyone!</li>
+            </ul>
+          </div>
+        </div>
    
           
-        <div id="spritebox" class="sprite-constant"></div>    
-    <script src="jquery-3.1.0.js"></script>
-    <script src="jquery.spritely.js"></script>
-    <script src="main.js"></script>
+        <div id="spritebox" class="sprite-constant"></div>   
+   
+        <div id="searchbar">
+    
+        <input type="text" class="searchbartextinput" id="searchbartextinput" name="q" size="21" maxlength="120" placeholder="Enter your town!">
         
+            <button id="search">Search</button>
+    
+            <div class="searchclear"></div>
+        </div>
         
-        
-      <script>
+        <script src="jquery-3.1.0.js"></script>
+        <script src="jquery.spritely.js"></script>
+        <script src="main.js"></script>
+
+ <script>
+    var a = document.getElementById('newsearch');
+    addEventListener('submit',function(e) {
+        e.preventDefault();
+        var b = document.getElementById('textinput').value;
+        window.location.href = 'http://mywebsite.com/'+b;
+
+    });
+    
+</script>
+        <script>
         function displayParsedData(data){
           /* Working with the 'data' object (not string) here, now we can access the different properties available.*/
           text = '<b>Name: </b>' + data.list[0].name + '<br/>';
@@ -41,7 +64,7 @@
           text += '<b>Weather Conditions: </b>' + data.list[0].weather[0].description + '<br/>';
           $('#parsed_json').append(text);
         }
-      </script>
+     </script>
 
 
       <script>
@@ -66,28 +89,7 @@
               });
           });
       });
-             </script>
-   
-        <div id="searchbar">
-    
-        <input type="text" class="searchbartextinput" id="searchbartextinput" name="q" size="21" maxlength="120" placeholder="Enter your town!">
-        
-<button id="search">Search</button>
-    
-<div class="searchclear"></div>
-</div>
-
-<script>
-    var a = document.getElementById('newsearch');
-    addEventListener('submit',function(e) {
-        e.preventDefault();
-        var b = document.getElementById('textinput').value;
-        window.location.href = 'http://mywebsite.com/'+b;
-
-    });
-    
-</script>
-     
+      </script>
     </body>
         
 </html>
