@@ -37,7 +37,7 @@ $(document).ready(function (){
     $("#search").click(function(){
 
         var searchQuery = $('#searchbartextinput').val();
-        var body = $('body');
+        var body = $('div.secondpage');
         var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + searchQuery + '&APPID=367b7f4b1ce9b8cbe3b504dae76bff97';
         
         //Send the request
