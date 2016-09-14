@@ -14,13 +14,13 @@ body {
 
 /* -- PAGE 1 -- */
 .firstpage {
-    background-color: aqua;
+    background-color:#F1F1F1;
     height: 100vh;
 }
 
 .firstpage h1 { 
-    font-family: 'Lato', sans-serif;
-    color: white;
+    font-family:  'Indie Flower', cursive;
+    color: black;
     text-align: center;
     font-size: 40px;
     /*z-index: 1;*/
@@ -35,6 +35,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 p.stevenabout {
@@ -42,13 +43,16 @@ p.stevenabout {
     position: absolute;
     font-weight: 600;
     font-size: 35px;
-    font-family: 'Lato', sans-serif;
-    color: darkgrey;
+    font-family:  'Indie Flower', cursive;
+    color: black;
     height: 20rem;
     line-height: 40px;
     margin-left: 10rem; 
     margin-right: 10rem;
     margin-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -81,15 +85,16 @@ p.stevenabout {
 
 p.greeting {
     position: relative;
-    left: 32rem;
     font-weight: 600;
     font-size: 50px;
-    font-family: 'Lato', sans-serif;
-    color: #ecf0f1;
+    font-family:  'Indie Flower', cursive;
+    color: black;
     line-height: 40px;
     height: 40px;
     display: block;
-    padding-left: -900rem;
+    text-align: center;
+    left: -9rem;
+    
 }
 
 .welcome ul.rotator {
@@ -103,7 +108,7 @@ p.greeting {
     -webkit-animation-duration: 6s;
     -webkit-animation-iteration-count: infinite;
     animation-name: change;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 /*    height: 40px;*/
     display: block;
@@ -114,26 +119,13 @@ p.greeting {
 .welcome ul.rotator li {
     font-weight: 600;
     font-size: 50px;
-    font-family: 'Lato', sans-serif;
-    color: #ecf0f1;
+    font-family: 'Indie Flower', cursive;
+    color: black;
     line-height: 40px;
     height: 40px;
     float: center;
 }
 
-/* Welcome Animation frames */
-
-/*
-@-webkit-keyframes opacity {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-*/
 
 @-webkit-keyframes change {
   0%,
@@ -165,7 +157,7 @@ p.greeting {
 
 /* -- PAGE 2 -- */
 .secondpage { 
-    background-color: aliceblue;
+    background-color: white;
     height: 100vh; 
 }
 
@@ -186,17 +178,29 @@ p.greeting {
 }
 
 /* Search bar */
-#searchbar {
+#searchbar input{
     text-align: center;
     position: 2rem;
-    z-index: -1; 
-    left: 400px;
+    z-index: -1;
     background: transparent;
-    top:900rem;
+    top:900rem; 
+    border-style:solid;color: darkgray;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
     
+}
+    
+#searchbar {
+    text-align: center;
+    
+}
+#search {
+    top:900rem;
+    width: 125px;
+    height: 85.5px;
+    font-family: 'Indie Flower', cursive;
+    position: 2rem;
+    font-size: 40px;
+    border-style: solid;
 }
 
-#search {
- top:900rem;
-    
-}
